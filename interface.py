@@ -35,7 +35,7 @@ st.markdown("""
 
 # --- Chemins ---
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-MODELE_PATH = os.path.join(BASE_DIR, "models", "modele_asthme_rf.pkl")
+MODELE_PATH = os.path.join(BASE_DIR, "modele_asthme_rf.pkl")
 
 @st.cache_resource
 def charger_modele():
