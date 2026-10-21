@@ -33,8 +33,9 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# --- Chemins ---
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# --- Chemins (CORRIGÉ) ---
+# On utilise un seul dirname pour rester dans le même dossier que interface.py
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 MODELE_PATH = os.path.join(BASE_DIR, "modele_asthme_rf.pkl")
 
 @st.cache_resource
